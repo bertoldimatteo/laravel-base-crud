@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use phpDocumentor\Reflection\Types\Nullable;
 
 class CreateComicsTable extends Migration
 {
@@ -15,6 +16,13 @@ class CreateComicsTable extends Migration
     {
         Schema::create('comics', function (Blueprint $table) {
             $table->id();
+
+            $table->string('title', 50);
+            $table->string('description', 500);
+            $table->string('image')->nullable;
+            $table->decimal('price', 4, 2);
+            $table->date("sale_date");
+
             $table->timestamps();
         });
     }
