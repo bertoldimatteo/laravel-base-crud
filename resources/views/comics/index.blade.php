@@ -6,5 +6,14 @@
 
 @section('page-content')
     <h1>Comics</h1>
-    @dump($comics)
+    <div class="container">
+        <div class="row">
+        @foreach ($comics as $comic)
+            <div class="col-lg-2">
+                <img src="{{$comic->image}}" alt="{{$comic->title}}">
+                <h2>{{$comic->title}}</h2>
+            </div>
+        @endforeach
+    </div>
+      </div>
 @endsection
