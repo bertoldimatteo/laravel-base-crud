@@ -19,7 +19,7 @@
         </div>
         <div class="mb-3">
             <label for="data">Data Uscita</label>
-            <input type="number" class="form-control" id="data" name="sale_date">
+            <input type="date" class="form-control" id="data" name="sale_date">
         </div>
         <div class="mb-3">
             <label for="copertina">Copertina Album</label>

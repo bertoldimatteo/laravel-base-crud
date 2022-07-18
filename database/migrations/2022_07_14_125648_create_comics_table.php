@@ -21,7 +21,7 @@ class CreateComicsTable extends Migration
             $table->longText('description');
             $table->string('image')->nullable();
             $table->decimal('price', 4, 2);
-            $table->date("sale_date");
+            $table->date('sale_date');
 
             $table->timestamps();
         });
